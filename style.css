@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.choice{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 5rem;
+}
+.choice:hover{
+    opacity: 95%;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    background-color: #081b31;
+    animation: color 10s infinite;
+}
+
+@keyframes color{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: purple;
+    }
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#UserScore, #CompScore{
+    font-size: 4rem;
+}
+
+.msgContainer{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline ;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.restartGame{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#NewGame{
+    background-color: #081b31;
+    width: 10rem;
+    height: 2rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#NewGame:hover{
+    transform: scale(1.05);
+    transition: 2s;
+    opacity: 70%;
+}
+
+@media (max-width:600px){
+    h1{
+        margin-top: auto;
+        font-size: 1.8rem;
+    }
+    .choices{
+        margin-top: auto;
+    }
+    .choice{
+        width: 100px;
+        width: 100px;
+        margin-top: auto;
+    }
+    .choice{
+        animation: none;
+    }
+    .choice:hover{
+        animation: none;
+        transform: none;
+        background-color:transparent;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    .scoreboard{
+        margin-top: auto;
+    }
+    .score{
+        font-size: 27px;
+    }
+    #UserScore, #CompScore{
+        font-size: 30px;
+    }
+    #msg{
+        display: inline;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    .restartGame{
+        margin-top: 6.5rem;
+    }
+
+}
